@@ -54,9 +54,9 @@ function setup() {
 function draw() {
   background(255);
 
-   kangaroo.x=camera.positionX-270;
+   //kangaroo.x=camera.positionX-270;
   // kangaroo.x=Camera.position.x-270;
-  // kangaroo.x=camera.position.x-270;
+   kangaroo.x=camera.position.x-270;
   // kangaroo.x=Camera.Position.X-270;
    
   if (gameState===PLAY){
@@ -113,8 +113,8 @@ function spawnShrubs() {
   if (frameCount % 150 === 0) {
 
     // var shrub = createSprite(camera.position+500,330,40,10);
-    // var shrub = createSprite(camera.position.x+500,330,40,10);
-     var shrub = createSprite(camera.positionX+500,330,40,10);
+     var shrub = createSprite(camera.position.x+500,330,40,10);
+    // var shrub = createSprite(camera.positionX+500,330,40,10);
     // var shrub = createSprite(Camera.position.x+500,330,40,10);
 
     shrub.velocityX = -(6 + 3*score/100)
